@@ -1,0 +1,24 @@
+{
+  "filmes": [
+    {
+      "id": 1,
+      "title": "spider man",
+      "author": "julio"
+    },
+    {
+      "id": 2,
+      "title": "Meio saque",
+      "author": "patrick"
+    },
+    {
+      "id": 3,
+      "title": "faroeste caboclo",
+      "author": "emanuel"
+    },
+    {
+      "title": "toto",
+      "author": "luizao",
+      "id": 4
+    }
+  ]
+}
