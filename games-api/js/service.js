@@ -1,4 +1,3 @@
-
 //importar o arquivo que tem os metodos de exceptions
 import { handleErrors } from "./exception.js";
 var URL = 'http://localhost:3000/jogos';
@@ -7,7 +6,7 @@ export const getAllGames = async () => {
     try {
         // Fazendo uma solicitação GET para obter produtos da AP
         const response = await fetch(URL);
-        
+
         //lidando com oerros na resposta
         handleErrors(response);
 
@@ -31,14 +30,14 @@ export const createGame = async (game) => {
         .catch((error) => console.log('Erro: ', error));
 };
 
-export const deleteGames = async (game) => {
+export const deleteGame = async (game) => {
     fetch(URL + `/${game.id}`, { method: 'DELETE' })
-    .then(response => response.json())
-    .then(data => console.log('Success:', data))
-    .catch(error => console.error('Error:', error));
+        .then(response => response.json())
+        .then(data => console.log('Success:', data))
+        .catch(error => console.error('Error:', error));
 };
 
-export const updateGames = async (game) =>{
+export const updateGame = async (game) => {
     fetch(URL + `/${game.id}`, {
         method: 'PATCH', headers: {
             'Content-Type': 'application/json'
