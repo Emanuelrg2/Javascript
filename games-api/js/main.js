@@ -16,7 +16,7 @@ const loadGames = () => {
 <div class="elemento">
 <img 
    class="cardimg" 
-   src="${jogo.img}"
+   src="${jogo.img}"                 
    alt="${jogo.nome}">
 
    <hr>
